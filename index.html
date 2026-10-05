@@ -1,165 +1,30 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
- 
-<title>Dashboard Executivo - Jornada dos Técnicos</title>
- 
-<style>
- 
-body{
-margin:0;
-font-family:'Segoe UI',Arial,sans-serif;
-background:#f1f5f9;
-}
- 
-.header{
-background:#0f172a;
-color:white;
-padding:25px;
-}
- 
-.header h1{
-margin:0;
-}
- 
-.header p{
-margin-top:10px;
-color:#cbd5e1;
-}
- 
-.container{
-padding:20px;
-}
- 
-.kpis{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
- 
-.card{
-background:white;
-border-radius:15px;
-padding:20px;
-box-shadow:0px 3px 12px rgba(0,0,0,0.1);
-}
- 
-.label{
-color:#64748b;
-font-size:14px;
-}
- 
-.value{
-font-size:32px;
-font-weight:bold;
-margin-top:10px;
-color:#0f172a;
-}
- 
-.section{
-margin-top:25px;
-}
- 
-.table{
-width:100%;
-border-collapse:collapse;
-}
- 
-.table th{
-background:#0f172a;
-color:white;
-padding:12px;
-}
- 
-.table td{
-padding:10px;
-border-bottom:1px solid #ddd;
-}
- 
-.footer{
-text-align:center;
-color:#64748b;
-padding:20px;
-}
- 
-</style>
-</head>
- 
-<body>
- 
-<div class="header">
-<h1>📊 Dashboard Executivo</h1>
-<p>Monitoramento do Início da Jornada dos Técnicos</p>
-</div>
- 
-<div class="container">
- 
 <div class="kpis">
- 
 <div class="card">
-<div class="label">Média de Início</div>
-<div class="value">08:22</div>
-</div>
- 
-<div class="card">
-<div class="label">Dia Mais Crítico</div>
-<div class="value">Segunda</div>
+<h3>Média Geral</h3>
+<h1>08:25</h1>
 </div>
  
 <div class="card">
-<div class="label">Aderência</div>
-<div class="value">74%</div>
+<h3>Aderência</h3>
+<h1>81%</h1>
 </div>
  
 <div class="card">
-<div class="label">Maior Ofensor</div>
-<div class="value">Em Apuração</div>
+<h3>Dia Mais Crítico</h3>
+<h1>Sábado</h1>
 </div>
  
+<div class="card">
+<h3>Maior Ofensor</h3>
+<h1>Lucivaldo</h1>
+</div>
 </div>
  
-<div class="section">
+<div class="graficos">
  
-<h2>Ranking de Ofensores</h2>
- 
-<table class="table">
- 
-<tr>
-<th>Técnico</th>
-<th>Média</th>
-<th>Status</th>
-</tr>
- 
-<tr>
-<td>Carregando...</td>
-<td>--</td>
-<td>--</td>
-</tr>
- 
-</table>
+<canvas id="grafico1"></canvas>
+<canvas id="grafico2"></canvas>
+<canvas id="grafico3"></canvas>
+<canvas id="grafico4"></canvas>
  
 </div>
- 
-<div class="section">
- 
-<h2>Insights Operacionais</h2>
- 
-<ul>
-<li>Identificar técnicos com recorrência de atrasos.</li>
-<li>Monitorar aderência ao turno programado.</li>
-<li>Avaliar comportamento por dia da semana.</li>
-<li>Identificar oportunidades de melhoria operacional.</li>
-</ul>
- 
-</div>
- 
-</div>
- 
-<div class="footer">
-Dashboard desenvolvido por WandyeuxNet UI
-</div>
- 
-</body>
-</html>
