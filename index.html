@@ -2,41 +2,36 @@
 <html>
 <head>
 <meta charset="UTF-8">
- 
+<title>Teste Chart</title>
+
 https://cdn.jsdelivr.net/npm/chart.jsscript>
- 
-<style>
-body{
-font-family:Arial;
-padding:20px;
-}
-</style>
- 
+
 </head>
- 
 <body>
- 
-<h1>Teste Chart.js</h1>
- 
+
+<h2>Teste Chart.js</h2>
+
 <canvas id="grafico"></canvas>
- 
+
 <script>
- 
-const ctx = document.getElementById('grafico');
- 
-new Chart(ctx,{
+
+console.log("Chart =", Chart);
+
+new Chart(
+document.getElementById("grafico"),
+{
 type:'bar',
 data:{
 labels:['A','B','C','D'],
 datasets:[{
 label:'Teste',
-data:[10,20,30,40],
-backgroundColor:'blue'
+data:[10,20,30,40]
 }]
 }
-});
- 
+}
+);
+
 </script>
- 
+
 </body>
 </html>
